@@ -1,6 +1,15 @@
 import {Utils} from '../app/Utils'
+// Test suite
+describe.skip('Urils test suite', () => {
 
-describe('Urils test suite', () => {
+	beforeEach(() => {
+		console.log('before each');
+	})
+
+	beforeAll(() => {
+		console.log('before all');
+	})
+
 	test('First test', () => {
 		const result = Utils.toUpperCase('abc');
 		expect(result).toBe('ABC');
@@ -23,5 +32,6 @@ describe('Urils test suite', () => {
 		expect(parsedUrl.query).toEqual(expectedQuery);
 		expect(expectedQuery).toBe(expectedQuery);
 	})
-
 });
+
+test.todo('* Test invalid URL');
