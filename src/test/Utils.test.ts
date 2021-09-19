@@ -10,6 +10,8 @@ describe.skip('First suite', () => {
 		console.log('before all');
 	})
 
+	/** Next comment will get function treated as it would be covered by unit test. */
+	/* istanbul ignore next */
 	test('First test', () => {
 		const result = Utils.toUpperCase('abc');
 		expect(result).toBe('ABC');
