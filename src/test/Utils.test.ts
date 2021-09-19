@@ -1,6 +1,6 @@
 import {Utils} from '../app/Utils'
 // Test suite
-describe.skip('Urils test suite', () => {
+describe.skip('First suite', () => {
 
 	beforeEach(() => {
 		console.log('before each');
@@ -34,4 +34,30 @@ describe.skip('Urils test suite', () => {
 	})
 });
 
-test.todo('* Test invalid URL');
+//test.todo('Todo test');
+
+describe('Url-s test suite', () => {
+
+	test('Test invalid URL', () => {
+		function expectError() {
+			Utils.parseUrl('')
+		}
+		expect(expectError).toThrowError('Empty url!');
+	});
+
+	test('Test invalid URL with arrow function', () => {
+		expect(() => {
+			Utils.parseUrl('')
+		}).toThrow('Empty url');
+	})
+
+	test.only('Test invalid URL with try catch function', () => {
+		try {
+			Utils.parseUrl('')
+		} catch (error){
+			expect(error).toBeInstanceOf(Error);
+			expect(error).toHaveProperty('message', 'Empty url!');
+		}
+	})
+
+})
