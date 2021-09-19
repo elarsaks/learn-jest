@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<coverage generated="1632045994246" clover="3.2.0">
-  <project timestamp="1632045994246" name="All files">
+<coverage generated="1632064084396" clover="3.2.0">
+  <project timestamp="1632064084396" name="All files">
     <metrics statements="6" coveredstatements="4" conditionals="2" coveredconditionals="1" methods="2" coveredmethods="1" elements="10" coveredelements="6" complexity="0" loc="6" ncloc="6" packages="1" files="1" classes="1"/>
     <file name="Utils.ts" path="/home/elarsaks/Desktop/learn-jest/src/app/Utils.ts">
       <metrics statements="6" coveredstatements="4" conditionals="2" coveredconditionals="1" methods="2" coveredmethods="1"/>
