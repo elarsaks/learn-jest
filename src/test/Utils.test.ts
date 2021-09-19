@@ -1,4 +1,4 @@
-import {Utils} from '../app/Utils'
+import { Utils } from '../app/Utils'
 // Test suite
 describe.skip('First suite', () => {
 
